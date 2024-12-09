@@ -28,21 +28,21 @@ function Header() {
         <div className="row">
           <div className="col-lg-11">
             <div className="caption">
-              <h1>Sri Lanka’s Foremost</h1>
+              <h1>Your One-Stop for</h1>
               <div className="d-flex align-items-end">
                 <div>
                   <h1 className="nowrap">
-                    <span className="main-color">Aluminum Extrusion</span> <br /> Manufacturer.
+                    <span className="main-color">Premium</span> <br /> Building Materials.
                   </h1>
                 </div>
                 <div>
                   <div className="text ml-30">
                     <p>
-                    As a leading provider of best-in-class commercial, industrial, residential and architectural aluminum extrusion profiles in Sri Lanka that shape industries{' '}
+                    As a trusted leader in Sri Lanka, we specialize in crafting world-class aluminum extrusion profiles for commercial, industrial, residential, and architectural applications,{' '}
                       <span className="text-light fw-600">
-                      around the world
+                      delivering solutions that drive innovation and 
                       </span>{' '}
-                      Aluminium manufacturing.
+                      shape industries globally.
                     </p>
                   </div>
                 </div>
@@ -60,8 +60,9 @@ function Header() {
             <div className="info">
               <h2 className="mb-10">100k +</h2>
               <h6>
-                Customers <br />
-                <span className="main-color">successfully</span>
+                Clients
+                <br />
+                <span className="main-color">Globally</span>
               </h6>
             </div>
           </div>

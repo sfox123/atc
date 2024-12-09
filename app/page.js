@@ -20,8 +20,8 @@ import Marq from '@/components/home-main/Marq';
 export const metadata = {
   title: 'ATC',
   icons: {
-    icon: '/assets/imgs/favicon.ico',
-    shortcut: '/assets/imgs/favicon.ico',
+    icon: '/assets/imgs/fav.png',
+    shortcut: '/assets/imgs/fav.png',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
       '/assets/css/style.css',

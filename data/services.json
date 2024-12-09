@@ -1,26 +1,32 @@
 [
   {
-    "title": "Digital Product Design",
+    "title": "Aluminium Extrusions",
     "img": "/assets/imgs/serv-icons/3.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    "desc": "High-quality aluminium profiles for architectural, industrial, and residential applications.",
     "link": "/page-services-details"
   },
   {
-    "title": "Web Developments",
+    "title": "Glass Solutions",
     "img": "/assets/imgs/serv-icons/4.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    "desc": "Durable and stylish glass panels tailored for modern designs and functionality.",
     "link": "/page-services-details"
   },
   {
-    "title": "Branding Design",
+    "title": "PVC Products",
     "img": "/assets/imgs/serv-icons/5.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    "desc": "Premium PVC materials ideal for doors, windows, and versatile building needs.",
     "link": "/page-services-details"
   },
   {
-    "title": "UI-UX Design",
+    "title": "Cladding Sheets",
     "img": "/assets/imgs/serv-icons/5.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    "desc": "Innovative cladding solutions for weather-resistant and aesthetically pleasing finishes.",
+    "link": "/page-services-details"
+  },
+  {
+    "title": "Eco Panels and Gypsum Boards",
+    "img": "/assets/imgs/serv-icons/4.png",
+    "desc": "Sustainable and lightweight materials for efficient and durable interior construction.",
     "link": "/page-services-details"
   }
 ]

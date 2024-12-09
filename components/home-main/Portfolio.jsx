@@ -29,10 +29,10 @@ function Portfolio() {
         <div className="sec-head mb-80">
           <div className="d-flex align-items-center">
             <div>
-              <span className="sub-title main-color mb-5">Our Portfolio</span>
+              <span className="sub-title main-color mb-5">Our Products</span>
               <h3 className="fw-600 fz-50 text-u d-rotate wow">
                 <span className="rotate-text">
-                  Selected <span className="fw-200">Works.</span>
+                  Selected <span className="fw-200">Items</span>
                 </span>
               </h3>
             </div>
