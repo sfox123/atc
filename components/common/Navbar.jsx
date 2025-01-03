@@ -79,7 +79,7 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Demos</span>
+                <span className="rolling-text">Services</span>
               </a>
               <div className="dropdown-menu mega-menu">
                 <div className="container">
@@ -155,7 +155,7 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Portfolio</span>
+                <span className="rolling-text">About us</span>
               </a>
               <div className="dropdown-menu">
                 <a className="dropdown-item" href="/portfolio-gallery">
@@ -180,16 +180,6 @@ function Navbar() {
                   Project Details
                 </a>
               </div>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/page-contact">
-                <span className="rolling-text">Contact Us</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/page-contact">
-                <span className="rolling-text">Contact Us</span>
-              </a>
             </li>
           </ul>
         </div>
