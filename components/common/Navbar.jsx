@@ -87,9 +87,9 @@ function Navbar() {
                     <div className="col-lg">
                       <a className="item-img text-center" href="/home-main">
                         <span className="img">
-                          <img src="/assets/imgs/menu/1.png" alt="" />
+                          <img src="/assets/imgs/menu/1.jpg" alt="" />
                         </span>
-                        <span className="mt-15">Main Home</span>
+                        <span className="mt-15">Aluminium</span>
                       </a>
                     </div>
                     <div className="col-lg">
@@ -98,9 +98,9 @@ function Navbar() {
                         href="/home-modern-studio"
                       >
                         <span className="img">
-                          <img src="/assets/imgs/menu/2.png" alt="" />
+                          <img src="/assets/imgs/menu/2.jpg" alt="" />
                         </span>
-                        <span className="mt-15">Modern Studio</span>
+                        <span className="mt-15">Aluminium Accessories</span>
                       </a>
                     </div>
                     <div className="col-lg">
@@ -109,9 +109,9 @@ function Navbar() {
                         href="/home-creative-agency"
                       >
                         <span className="img">
-                          <img src="/assets/imgs/menu/3.png" alt="" />
+                          <img src="/assets/imgs/menu/3.jpg" alt="" />
                         </span>
-                        <span className="mt-15">Creative Agency</span>
+                        <span className="mt-15">Ceiling</span>
                       </a>
                     </div>
                     <div className="col-lg">
@@ -120,17 +120,17 @@ function Navbar() {
                         href="/home-digital-agency"
                       >
                         <span className="img">
-                          <img src="/assets/imgs/menu/4.png" alt="" />
+                          <img src="/assets/imgs/menu/4.jpg" alt="" />
                         </span>
-                        <span className="mt-15">Digital Agency</span>
+                        <span className="mt-15">Partition</span>
                       </a>
                     </div>
                     <div className="col-lg">
                       <a className="item-img text-center" href="/home-personal">
                         <span className="img">
-                          <img src="/assets/imgs/menu/5.png" alt="" />
+                          <img src="/assets/imgs/menu/5.jpg" alt="" />
                         </span>
-                        <span className="mt-15">Freelancer</span>
+                        <span className="mt-15">Rubber Beading</span>
                       </a>
                     </div>
                   </div>

@@ -1,4 +1,5 @@
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
 function Footer() {
   return (
@@ -14,13 +15,13 @@ function Footer() {
             <div className="column md-mb50">
               <h6 className="sub-title mb-30">Contact</h6>
               <h6 className="p-color fw-400">
-                5919 Trussville Crossings <br /> Pkwy, Birmingham
+                No 542, Sri Sangaraja Mawatha <br /> Colombo 10.
               </h6>
               <h6 className="mt-30 mb-15">
-                <a href="#0">Hello@webfolio.com</a>
+                <a href="#0">info@atc.lk</a>
               </h6>
               <a href="#0" className="underline">
-                <span className="fz-22 main-color">+2 456 (343) 24 45</span>
+                <span className="fz-22 main-color">+94 76 017 9570</span>
               </a>
             </div>
           </div>
@@ -29,16 +30,18 @@ function Footer() {
               <h6 className="sub-title mb-30">Useful Links</h6>
               <ul className="rest fz-14 opacity-7">
                 <li className="mb-15">
-                  <a href="/page-about">About</a>
+                  <a href="/page-about">Services</a>
                 </li>
                 <li className="mb-15">
-                  <a href="/page-services">Services</a>
+                  <a href="/page-services">Contact us</a>
                 </li>
                 <li className="mb-15">
-                  <a href="/blog-grid-sidebar">Blog</a>
+                  <a href="/blog-grid-sidebar">About us</a>
                 </li>
                 <li>
-                  <a href="/page-contact">Contact</a>
+                  <a href="https://alumexgroup.com/" target="_blank">
+                    ALUMEX
+                  </a>
                 </li>
               </ul>
             </div>
@@ -53,24 +56,22 @@ function Footer() {
                 </button>
               </div>
               <ul className="rest social-icon d-flex align-items-center">
-                <li className="hover-this cursor-pointer">
-                  <a href="#0" className="hover-anim">
+                <li className="hover-anim cursor-pointer">
+                  <a
+                    href="https://www.facebook.com/@asiatradecentre/"
+                    target="_blank"
+                    className="hover-this"
+                  >
                     <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li className="hover-this cursor-pointer ml-10">
-                  <a href="#0" className="hover-anim">
-                    <i className="fab fa-dribbble"></i>
-                  </a>
-                </li>
-                <li className="hover-this cursor-pointer ml-10">
-                  <a href="#0" className="hover-anim">
+                  <a
+                    href="https://www.linkedin.com/company/alumex-plc/"
+                    target="_blank"
+                    className="hover-anim"
+                  >
                     <i className="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li className="hover-this cursor-pointer ml-10">
-                  <a href="#0" className="hover-anim">
-                    <i className="fab fa-instagram"></i>
                   </a>
                 </li>
               </ul>
@@ -80,10 +81,10 @@ function Footer() {
         <div className="pt-30 pb-30 mt-80 bord-thin-top">
           <div className="text-center">
             <p className="fz-14">
-              © 2024 Webfolio is Proudly Powered by{' '}
+              © 2024 ATC{" "}
               <span className="underline main-color">
-                <a href="https://themeforest.net/user/UiCamp" target="_blank">
-                  UiCamp
+                <a href="#" target="_blank">
+                  All rights reserved.
                 </a>
               </span>
             </p>

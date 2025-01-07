@@ -11,10 +11,10 @@ import Contact from '@/components/page-contact/Contact';
 import Map from '@/components/page-contact/Map';
 
 export const metadata = {
-  title: 'webfolio',
+  title: 'ATC | Contact',
   icons: {
-    icon: '/assets/imgs/favicon.ico',
-    shortcut: '/assets/imgs/favicon.ico',
+    icon: '/assets/imgs/fav.png',
+    shortcut: '/assets/imgs/fav.png',
     other: generateStylesheetObject([
       '/assets/css/plugins.css',
       '/assets/css/style.css',
