@@ -12,8 +12,6 @@ import Marq2 from '@/components/common/Marq2';
 import Navbar from '@/components/common/Navbar';
 import Portfolio from '@/components/home-main/Portfolio';
 import Services from '@/components/home-main/Services';
-import Team from '@/components/home-main/Team';
-import Testimonials from '@/components/home-main/Testimonials';
 import Script from 'next/script';
 import Marq from '@/components/home-main/Marq';
 
@@ -47,9 +45,9 @@ export default function Home() {
             <Marq />
             <Services />
             <Portfolio />
-            <Feat />
-            <Team />
-            <Testimonials />
+            {/* <Feat /> */}
+            {/* <Team /> */}
+            {/* <Testimonials /> */}
             <Clients />
             <Marq2 />
           </main>

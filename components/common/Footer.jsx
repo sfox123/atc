@@ -56,24 +56,25 @@ function Footer() {
                 </button>
               </div>
               <ul className="rest social-icon d-flex align-items-center">
-                <li className="hover-anim cursor-pointer">
-                  <a
-                    href="https://www.facebook.com/@asiatradecentre/"
-                    target="_blank"
-                    className="hover-this"
-                  >
+                <Link
+                  href="https://www.facebook.com/@asiatradecentre/"
+                  target="_blank"
+                  className="hover-this"
+                >
+                  <li className=" hover-anim cursor-pointer">
                     <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li className="hover-this cursor-pointer ml-10">
-                  <a
-                    href="https://www.linkedin.com/company/alumex-plc/"
-                    target="_blank"
-                    className="hover-anim"
-                  >
+                  </li>
+                </Link>
+
+                <a
+                  href="https://www.linkedin.com/company/alumex-plc/"
+                  className="hover-this cursor-pointer ml-10"
+                  target="_blank"
+                >
+                  <li className="hover-anim">
                     <i className="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
+                  </li>
+                </a>
               </ul>
             </div>
           </div>
