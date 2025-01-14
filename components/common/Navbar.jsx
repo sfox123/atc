@@ -85,7 +85,7 @@ function Navbar() {
                 <div className="container">
                   <div className="row">
                     <div className="col-lg">
-                      <a className="item-img text-center" href="/home-main">
+                      <a className="item-img text-center" href="/aluminium">
                         <span className="img">
                           <img src="/assets/imgs/menu/1.jpg" alt="" />
                         </span>
@@ -95,7 +95,7 @@ function Navbar() {
                     <div className="col-lg">
                       <a
                         className="item-img text-center"
-                        href="/home-modern-studio"
+                        href="/Aluminium-Accessories"
                       >
                         <span className="img">
                           <img src="/assets/imgs/menu/2.jpg" alt="" />
@@ -106,7 +106,7 @@ function Navbar() {
                     <div className="col-lg">
                       <a
                         className="item-img text-center"
-                        href="/home-creative-agency"
+                        href="/ceiling"
                       >
                         <span className="img">
                           <img src="/assets/imgs/menu/3.jpg" alt="" />
@@ -117,7 +117,7 @@ function Navbar() {
                     <div className="col-lg">
                       <a
                         className="item-img text-center"
-                        href="/home-digital-agency"
+                        href="partition"
                       >
                         <span className="img">
                           <img src="/assets/imgs/menu/4.jpg" alt="" />
@@ -126,7 +126,7 @@ function Navbar() {
                       </a>
                     </div>
                     <div className="col-lg">
-                      <a className="item-img text-center" href="/home-personal">
+                      <a className="item-img text-center" href="rubber-beading">
                         <span className="img">
                           <img src="/assets/imgs/menu/5.jpg" alt="" />
                         </span>
@@ -142,7 +142,7 @@ function Navbar() {
                 <span className="rolling-text">Contact Us</span>
               </a>
             </li>
-            <li
+            {/* <li
               onMouseLeave={handleDropdownMouseLeave}
               onMouseMove={handleDropdownMouseMove}
               className="nav-item dropdown"
@@ -180,7 +180,7 @@ function Navbar() {
                   Project Details
                 </a>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
 
