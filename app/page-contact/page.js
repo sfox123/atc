@@ -13,11 +13,11 @@ import Map from '@/components/page-contact/Map';
 export const metadata = {
   title: 'ATC | Contact',
   icons: {
-    icon: '/assets/imgs/fav.png',
-    shortcut: '/assets/imgs/fav.png',
+    icon: '../assets/imgs/fav.png',
+    shortcut: '../assets/imgs/fav.png',
     other: generateStylesheetObject([
-      '/assets/css/plugins.css',
-      '/assets/css/style.css',
+      '../assets/css/plugins.css',
+      '../assets/css/style.css',
       'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
       'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap',
     ]),
@@ -43,44 +43,48 @@ export default function Home() {
         </div>
       </div>
       <Script
-        src="/assets/js/ScrollTrigger.min.js"
+        src="../assets/js/ScrollTrigger.min.js"
         strategy="beforeInteractive"
       />
       <Script
-        src="/assets/js/ScrollSmoother.min.js"
+        src="../assets/js/ScrollSmoother.min.js"
         strategy="beforeInteractive"
       />
-      <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
+
+      <Script strategy="beforeInteractive" src="../assets/js/plugins.js"></Script>
       <Script
         strategy="beforeInteractive"
-        src="/assets/js/TweenMax.min.js"
+        src="../assets/js/TweenMax.min.js"
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/assets/js/charming.min.js"
+        src="../assets/js/charming.min.js"
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/assets/js/countdown.js"
+        src="../assets/js/countdown.js"
+      ></Script>
+
+      <Script
+        strategy="beforeInteractive"
+        src="../assets/js/gsap.min.js"
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/assets/js/gsap.min.js"
+        src="../assets/js/splitting.min.js"
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/assets/js/splitting.min.js"
+        src="../assets/js/isotope.pkgd.min.js"
       ></Script>
       <Script
         strategy="beforeInteractive"
-        src="/assets/js/isotope.pkgd.min.js"
+        src="../assets/js/imgReveal/imagesloaded.pkgd.min.js"
       ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
-      ></Script>
-      {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
-      <Script src="/assets/js/scripts.js"></Script>{' '}
+
+      <Script src="../assets/js/smoother-script.js" strategy="lazyOnload" />
+
+      <Script src="../assets/js/scripts.js"></Script>
     </body>
   );
 }
