@@ -23,7 +23,7 @@ function Contact() {
               <div className="social-icon mt-50">
                 <a href="https://www.facebook.com/@asiatradecentre/" target='_blank' className="hover-anim">
                   <i className="fab fa-facebook-f"></i>
-                </a>
+                </a> 
                 <a href="#0">
                   <i className="fab fa-dribbble"></i>
                 </a>
