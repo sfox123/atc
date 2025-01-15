@@ -1,86 +1,120 @@
-import generateStylesheetObject from '@/common/generateStylesheetsObject';
-import Lines from '@/components/common/Lines';
-import ProgressScroll from '@/components/common/ProgressScroll';
-import Cursor from '@/components/common/cusor';
-import LoadingScreen from '@/components/common/loader';
-import Footer from '@/components/common/Footer';
-import Navbar from '@/components/common/Navbar';
-import Script from 'next/script';
-import Header from '@/components/page-contact/Header';
-import Contact from '@/components/page-contact/Contact';
-import Map from '@/components/page-contact/Map';
+import React from 'react';
 
-export const metadata = {
-  title: 'ATC | Contact',
-  icons: {
-    icon: '/assets/imgs/fav.png',
-    shortcut: '/assets/imgs/fav.png',
-    other: generateStylesheetObject([
-      '/assets/css/plugins.css',
-      '/assets/css/style.css',
-      'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
-      'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap',
-    ]),
-  },
-};
-
-export default function Home() {
+function Contact() {
   return (
-    <body>
-      <LoadingScreen />
-      <Cursor />
-      <ProgressScroll />
-      <Lines />
-      <Navbar />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <main className="main-bg o-hidden">
-            <Header />
-            <Contact />
-            <Map />
-          </main>
-          <Footer />
+    <section className="contact section-padding">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 valign">
+            <div className="sec-head info-box full-width md-mb80">
+              <div className="phone fz-30 fw-600 underline main-color">
+                <a href="#0">+94 76 017 9570</a>
+              </div>
+              <div className="morinfo mt-50 pb-30 bord-thin-bottom">
+                <h6 className="mb-15">Address</h6>
+                <p>No 542, Sri Sangaraja Mawatha
+                Colombo 10.</p>
+              </div>
+              <div className="morinfo mt-30 pb-30 bord-thin-bottom">
+                <h6 className="mb-15">Email</h6>
+                <p>info@atc.lk</p>
+              </div>
+
+              <div className="social-icon mt-50">
+                <a href="https://www.facebook.com/@asiatradecentre/" target='_blank' className="hover-anim">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a href="#0">
+                  <i className="fab fa-dribbble"></i>
+                </a>
+                <a href="#0">
+                  <i className="fab fa-behance"></i>
+                </a>
+                <a href="#0">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-7 offset-lg-1 valign">
+            <div className="full-width">
+              <div className="sec-head mb-50">
+                <h6 className="sub-title main-color mb-15">Let&lsquo;s Chat</h6>
+                <h3 className="text-u ls1">
+                  Send a <span className="fw-200">message</span>
+                </h3>
+              </div>
+              <form
+                id="contact-form"
+                className="form2"
+                method="post"
+                action="contact.php"
+              >
+                <div className="messages"></div>
+
+                <div className="controls row">
+                  <div className="col-lg-6">
+                    <div className="form-group mb-30">
+                      <input
+                        id="form_name"
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        required="required"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <div className="form-group mb-30">
+                      <input
+                        id="form_email"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        required="required"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="col-12">
+                    <div className="form-group mb-30">
+                      <input
+                        id="form_subject"
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="col-12">
+                    <div className="form-group">
+                      <textarea
+                        id="form_message"
+                        name="message"
+                        placeholder="Message"
+                        rows="4"
+                        required="required"
+                      ></textarea>
+                    </div>
+                    <div className="mt-30">
+                      <button
+                        type="submit"
+                        className="butn butn-full butn-bord radius-30"
+                      >
+                        <span className="text">Let&lsquo;s Talk</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-      <Script
-        src="/assets/js/ScrollTrigger.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="/assets/js/ScrollSmoother.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/TweenMax.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/charming.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/countdown.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/gsap.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/splitting.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/isotope.pkgd.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
-      ></Script>
-      {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
-      <Script src="/assets/js/scripts.js"></Script>{' '}
-    </body>
+    </section>
   );
 }
+
+export default Contact;

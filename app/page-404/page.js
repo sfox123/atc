@@ -7,7 +7,7 @@ import Navbar from '@/components/common/Navbar';
 import Script from 'next/script';
 import Error from '@/components/page-404/Error';
 export const metadata = {
-  title: 'ATC | 404',
+  title: 'webfolio',
   icons: {
     icon: '/assets/imgs/favicon.ico',
     shortcut: '/assets/imgs/favicon.ico',
