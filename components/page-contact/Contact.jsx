@@ -1,6 +1,21 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 function Contact() {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  }
+
   return (
     <section className="contact section-padding">
       <div className="container">
@@ -8,7 +23,7 @@ function Contact() {
           <div className="col-lg-4 valign">
             <div className="sec-head info-box full-width md-mb80">
               <div className="phone fz-30 fw-600 underline main-color">
-                <a href="#0">+94 76 017 9570</a>
+                <a href="#0">0114 343 476</a>
               </div>
               <div className="morinfo mt-50 pb-30 bord-thin-bottom">
                 <h6 className="mb-15">Address</h6>
@@ -17,7 +32,7 @@ function Contact() {
               </div>
               <div className="morinfo mt-30 pb-30 bord-thin-bottom">
                 <h6 className="mb-15">Email</h6>
-                <p>info@atc.lk</p>
+                <p>info@asiatradecentre.com</p>
               </div>
 
               <div className="social-icon mt-50">
@@ -48,7 +63,9 @@ function Contact() {
                 id="contact-form"
                 className="form2"
                 method="post"
-                action="contact.php"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                }}
               >
                 <div className="messages"></div>
 
