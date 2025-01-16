@@ -79,13 +79,13 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Services</span>
+                <span className="rolling-text">Products</span>
               </a>
               <div className="dropdown-menu mega-menu">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg">
-                      <a className="item-img text-center" href="/home-main">
+                      <a className="item-img text-center" href="/aluminium">
                         <span className="img">
                           <img src="/assets/imgs/menu/1.jpg" alt="" />
                         </span>
@@ -95,7 +95,7 @@ function Navbar() {
                     <div className="col-lg">
                       <a
                         className="item-img text-center"
-                        href="/home-modern-studio"
+                        href="/aluminium-accessories"
                       >
                         <span className="img">
                           <img src="/assets/imgs/menu/2.jpg" alt="" />
@@ -106,7 +106,7 @@ function Navbar() {
                     <div className="col-lg">
                       <a
                         className="item-img text-center"
-                        href="/home-creative-agency"
+                        href="/ceiling"
                       >
                         <span className="img">
                           <img src="/assets/imgs/menu/3.jpg" alt="" />
@@ -117,7 +117,7 @@ function Navbar() {
                     <div className="col-lg">
                       <a
                         className="item-img text-center"
-                        href="/home-digital-agency"
+                        href="/partition"
                       >
                         <span className="img">
                           <img src="/assets/imgs/menu/4.jpg" alt="" />
@@ -126,7 +126,7 @@ function Navbar() {
                       </a>
                     </div>
                     <div className="col-lg">
-                      <a className="item-img text-center" href="/home-personal">
+                      <a className="item-img text-center" href="/rubber-beading">
                         <span className="img">
                           <img src="/assets/imgs/menu/5.jpg" alt="" />
                         </span>
@@ -137,12 +137,12 @@ function Navbar() {
                 </div>
               </div>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="/page-contact">
                 <span className="rolling-text">Contact Us</span>
               </a>
-            </li>
-            <li
+            </li> */}
+            {/* <li
               onMouseLeave={handleDropdownMouseLeave}
               onMouseMove={handleDropdownMouseMove}
               className="nav-item dropdown"
@@ -180,7 +180,7 @@ function Navbar() {
                   Project Details
                 </a>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
 

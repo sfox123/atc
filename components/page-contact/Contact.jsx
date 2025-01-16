@@ -1,25 +1,61 @@
 'use client';
-import React,{useState} from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
+import { toast, Toaster } from 'react-hot-toast';
 
 function Contact() {
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
-    message: ''
+    number: '',
+    message: '',
   });
+
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
-  }
+  };
+
+  const handleSubmit = (e) => {
+    setLoading(true);
+    e.preventDefault();
+    axios
+      .post('https://us-central1-bute-backend.cloudfunctions.net/app/atcEmail', formData)
+      .then((res) => {
+        toast.success('Successfully submitted!');
+        setFormData({
+          name: '',
+          email: '',
+          number: '',
+          message: '',
+        });
+        setLoading(false);
+      })
+      .catch((err) => {
+        toast.error('There was a problem submitting your form.');
+        setLoading(false);
+      });
+  };
 
   return (
     <section className="contact section-padding">
       <div className="container">
+        <Toaster
+          position="bottom-center"
+          reverseOrder={false}
+          containerStyle={{
+            fontSize: '1rem',
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        />
         <div className="row">
           <div className="col-lg-4 valign">
             <div className="sec-head info-box full-width md-mb80">
@@ -28,8 +64,11 @@ function Contact() {
               </div>
               <div className="morinfo mt-50 pb-30 bord-thin-bottom">
                 <h6 className="mb-15">Address</h6>
-                <p>No 542, Sri Sangaraja Mawatha
-                Colombo 10.</p>
+                <p>
+                  No 542, Sri Sangaraja Mawatha
+                  <br />
+                  Colombo 10.
+                </p>
               </div>
               <div className="morinfo mt-30 pb-30 bord-thin-bottom">
                 <h6 className="mb-15">Email</h6>
@@ -37,17 +76,12 @@ function Contact() {
               </div>
 
               <div className="social-icon mt-50">
-                <a href="https://www.facebook.com/@asiatradecentre/" target='_blank' className="hover-anim">
+                <a
+                  href="https://www.facebook.com/@asiatradecentre/"
+                  target="_blank"
+                  className="hover-anim"
+                >
                   <i className="fab fa-facebook-f"></i>
-                </a> 
-                <a href="#0">
-                  <i className="fab fa-dribbble"></i>
-                </a>
-                <a href="#0">
-                  <i className="fab fa-behance"></i>
-                </a>
-                <a href="#0">
-                  <i className="fab fa-instagram"></i>
                 </a>
               </div>
             </div>
@@ -64,9 +98,7 @@ function Contact() {
                 id="contact-form"
                 className="form2"
                 method="post"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                }}
+                onSubmit={handleSubmit}
               >
                 <div className="messages"></div>
 
@@ -79,6 +111,8 @@ function Contact() {
                         name="name"
                         placeholder="Name"
                         required="required"
+                        onChange={handleChange}
+                        value={formData.name}
                       />
                     </div>
                   </div>
@@ -91,6 +125,8 @@ function Contact() {
                         name="email"
                         placeholder="Email"
                         required="required"
+                        onChange={handleChange}
+                        value={formData.email}
                       />
                     </div>
                   </div>
@@ -99,9 +135,12 @@ function Contact() {
                     <div className="form-group mb-30">
                       <input
                         id="form_subject"
-                        type="text"
-                        name="subject"
-                        placeholder="Subject"
+                        type="number"
+                        name="number"
+                        placeholder="Mobile Number"
+                        required="required"
+                        onChange={handleChange}
+                        value={formData.number}
                       />
                     </div>
                   </div>
@@ -114,14 +153,21 @@ function Contact() {
                         placeholder="Message"
                         rows="4"
                         required="required"
+                        onChange={handleChange}
+                        value={formData.message}
                       ></textarea>
                     </div>
                     <div className="mt-30">
                       <button
                         type="submit"
                         className="butn butn-full butn-bord radius-30"
+                        disabled={loading}
                       >
-                        <span className="text">Let&lsquo;s Talk</span>
+                        {loading ? (
+                          <span className="text">Let&lsquo;s Wait</span>
+                        ) : (
+                          <span className="text">Let&lsquo;s Talk</span>
+                        )}
                       </button>
                     </div>
                   </div>
