@@ -18,10 +18,10 @@ function Footer() {
                 No 542, Sri Sangaraja Mawatha <br /> Colombo 10.
               </h6>
               <h6 className="mt-30 mb-15">
-                <a href="#0">info@atc.lk</a>
+                <a href="#0">info@asiantradecentre.com</a>
               </h6>
               <a href="#0" className="underline">
-                <span className="fz-22 main-color">+94 76 017 9570</span>
+                <span className="fz-22 main-color">0114 343 476</span>
               </a>
             </div>
           </div>
@@ -65,16 +65,6 @@ function Footer() {
                     <i className="fab fa-facebook-f"></i>
                   </li>
                 </Link>
-
-                <a
-                  href="https://www.linkedin.com/company/alumex-plc/"
-                  className="hover-this cursor-pointer ml-10"
-                  target="_blank"
-                >
-                  <li className="hover-anim">
-                    <i className="fab fa-linkedin-in"></i>
-                  </li>
-                </a>
               </ul>
             </div>
           </div>
