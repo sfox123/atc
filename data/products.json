@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "tag": "aluminium",
+        "name": "Product 1",
+        "link": "/products/1",
+        "img": "/assets/imgs/products/p1.jpg"
+    },
+    {
+        "id": 2,
+        "tag": "aluminium",
+        "name": "Product 2",
+        "link": "/products/2",
+        "img": "/assets/imgs/products/p2.jpg"
+    },
+    {
+        "id": 3,
+        "tag": "aluminium",
+        "name": "Product 3",
+        "link": "/products/3",
+        "img": "/assets/imgs/products/p3.jpg"
+    }
+]

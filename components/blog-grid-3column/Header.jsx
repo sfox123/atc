@@ -2,7 +2,7 @@
 import React, { useEffect, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import loadBackgroudImages from '@/common/loadBackgroudImages';
-function Header() {
+function Header({title}) {
   useLayoutEffect(() => {
     const tl = gsap.timeline();
     tl.fromTo('.header', { y: 200 }, { y: 0 }, '+=2.5');
@@ -29,7 +29,7 @@ function Header() {
           <div className="col-12">
             <div className="text-center">
               <h1 className="text-u ls1 fz-80">
-                Products / <span className="fw-200">Aluminium</span>
+                Products / <span className="fw-200">{title}</span>
               </h1>
             </div>
           </div>

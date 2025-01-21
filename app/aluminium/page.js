@@ -33,7 +33,7 @@ export default function Home() {
         <Navbar />
         <div id="smooth-content">
           <main className="main-bg">
-            <Header />
+            <Header title={"Aluminium"} />
             <Blogs />
           </main>
           <Footer />
