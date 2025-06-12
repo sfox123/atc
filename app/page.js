@@ -36,8 +36,9 @@ export default function Home() {
         <div className="content">
           <h1>🚧 Website Under Construction 🚧</h1>
           <p>
-            We're working hard to bring you something amazing. Please check back
-            soon!
+            {
+              "We're working hard to bring you something amazing. Please check back soon!"
+            }
           </p>
           <p className="contact">
             Contact us at:
