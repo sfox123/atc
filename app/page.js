@@ -29,79 +29,6 @@ export const metadata = {
   },
 };
 
-// export default function Home() {
-//   return (
-//     <body>
-//       <LoadingScreen />
-//       <Cursor />
-//       <ProgressScroll />
-//       <Lines />
-//       <Navbar />
-//       <div id="smooth-wrapper">
-//         <div id="smooth-content">
-//           <main className="main-bg o-hidden">
-//             <Header />
-//             <Intro />
-//             <Marq />
-//             <Services />
-//             <Portfolio />
-//             {/* <Feat /> */}
-//             {/* <Team /> */}
-//             {/* <Testimonials /> */}
-//             {/* <Clients /> */}
-//             <Marq2 />
-//           </main>
-//           <Footer />
-//         </div>
-//       </div>
-
-//       <Script
-//         src="/assets/js/ScrollTrigger.min.js"
-//         strategy="beforeInteractive"
-//       />
-//       <Script
-//         src="/assets/js/ScrollSmoother.min.js"
-//         strategy="beforeInteractive"
-//       />
-
-//       <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
-//       <Script
-//         strategy="beforeInteractive"
-//         src="/assets/js/TweenMax.min.js"
-//       ></Script>
-//       <Script
-//         strategy="beforeInteractive"
-//         src="/assets/js/charming.min.js"
-//       ></Script>
-//       <Script
-//         strategy="beforeInteractive"
-//         src="/assets/js/countdown.js"
-//       ></Script>
-
-//       <Script
-//         strategy="beforeInteractive"
-//         src="/assets/js/gsap.min.js"
-//       ></Script>
-//       <Script
-//         strategy="beforeInteractive"
-//         src="/assets/js/splitting.min.js"
-//       ></Script>
-//       <Script
-//         strategy="beforeInteractive"
-//         src="/assets/js/isotope.pkgd.min.js"
-//       ></Script>
-//       <Script
-//         strategy="beforeInteractive"
-//         src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
-//       ></Script>
-
-//       {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
-
-//       <Script src="/assets/js/scripts.js"></Script>
-//     </body>
-//   );
-// }
-
 export default function Home() {
   return (
     <>
@@ -113,7 +40,7 @@ export default function Home() {
             soon!
           </p>
           <p className="contact">
-            Contact us at:{" "}
+            Contact us at:
             <a href="mailto:info@asiantradecentre.com">
               info@asiantradecentre.com
             </a>
